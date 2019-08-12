@@ -4,12 +4,12 @@
   <h1 class="text-center">Learn something today</h1>
   <hr />
 
-  <% @courses.each.do |course| %>
+  <% @courses.each do |course| %>
     <h2 class="text-center">
       <%= link_to course.title, course_path(course) %>    
     </h2>
 
-    
+
     <br />
     <div class ="row">    
       <div class="col-sm-8 col-12">
