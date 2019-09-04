@@ -32,9 +32,10 @@
 </script>
 
 <br />
+
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
-  <%= image_tag current_course.image, class: 'img-fluid' %>
+  <%= image_tag current_course.image.to_s, class: 'img-fluid' %>
 
   <div class="text-center">
     <!-- Button trigger modal -->
@@ -42,6 +43,10 @@
       Add a new section...
     </button>
   </div>
+
+  <br />
+  <%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning float-right' %>
+  <br class="clr" />
 
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
