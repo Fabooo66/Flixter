@@ -110,6 +110,11 @@ body {
   font-size: 25px;
 }
 
+.lesson a b {
+  font-weight: 100;
+  font-size: 25px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -141,6 +146,10 @@ ul .header .fa {
 .lessons li b {
   font-size: 25px;
   font-weight: 100;
+}
+
+.lessons li p {
+  margin: 0;
 }
 
 .section-li {
